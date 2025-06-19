@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.retangulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #e6f0ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+    height: 120px; /* Altura inicial fixa (ajuste conforme necessário) */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa a altura inicial */
+}
+
+/* Efeito hover: dobra a altura e ajusta o layout */
+.retangulo:hover {
+    height: 240px; /* Dobra a altura (ajuste conforme o conteúdo) */
+    transform: none; /* Remove transform se existir */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+.retangulo img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease; /* Efeito opcional na imagem */
+}
+
+/* Efeito opcional: imagem cresce levemente no hover */
+.retangulo:hover img {
+    transform: scale(1.05);
+}
+
+.descricao {
+    flex: 1;
+}
+
+.descricao h2 {
+    margin-bottom: 10px;
+    color: #1a3e72;
+}
+
+.descricao p {
+    color: #333;
+    line-height: 1.5;
+    opacity: 0.9;
+}
