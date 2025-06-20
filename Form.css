@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
+    color: #000; /* Cor do texto alterada para preto */
 }
 
 /* Cabeçalho */
@@ -174,13 +174,13 @@ footer {
 
 .form-container iframe {
     width: 100%;
-    max-width: 1600px;  /* Largura máxima do formulário */
-    height: 1200px;     /* Altura fixa ou use min-height */
+    max-width: 1600px; /* Largura máxima do formulário */
+    height: 1200px;    /* Altura fixa ou use min-height */
     border: none;
 }
 
 @media (max-width: 768px) {
     .form-container iframe {
-        height: 800px;  /* Altura maior para mobile */
+        height: 800px; /* Altura maior para mobile */
     }
 }

@@ -5,6 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* CONTAINER CENTRALIZADO */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -12,52 +13,87 @@
     padding: 20px;
 }
 
+/* RETÂNGULO DE CADA RELATO */
 .retangulo {
     width: 100%;
     display: flex;
-    align-items: center;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     background-color: #e6f0ff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
-    height: 120px; /* Altura inicial fixa (ajuste conforme necessário) */
-    overflow: hidden; /* Esconde conteúdo que ultrapassa a altura inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    transform: scale(1); /* estado normal */
 }
 
-/* Efeito hover: dobra a altura e ajusta o layout */
+/* EFEITO HOVER (EXPANSÃO) */
 .retangulo:hover {
-    height: 240px; /* Dobra a altura (ajuste conforme o conteúdo) */
-    transform: none; /* Remove transform se existir */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transform: scale(1.03); /* aumenta ligeiramente o bloco */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* IMAGEM */
 .retangulo img {
-    width: 200px;
-    height: auto;
+    width: 250px;
+    height: 150px;
     margin-right: 20px;
     object-fit: cover;
     border-radius: 4px;
-    transition: transform 0.3s ease; /* Efeito opcional na imagem */
+    border: 2px solid #1a3e72;
+    background-color: #ccc; /* fallback visual */
+    transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
-/* Efeito opcional: imagem cresce levemente no hover */
+/* IMAGEM MAIOR NO HOVER */
 .retangulo:hover img {
-    transform: scale(1.05);
+    width: 300px;
+    height: 180px;
 }
 
+/* DESCRIÇÃO AO LADO DA IMAGEM */
 .descricao {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 5px; /* espaçamento interno */
 }
 
-.descricao h2 {
-    margin-bottom: 10px;
+/* TÍTULO */
+.titulo {
+    font-size: 1.2rem;
     color: #1a3e72;
+    margin-bottom: 10px;
 }
 
-.descricao p {
-    color: #333;
-    line-height: 1.5;
-    opacity: 0.9;
+.titulo small {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* BLOCO DE PROBLEMA */
+.problema-acessibilidade {
+    background-color: #ffe6e6;
+    padding: 12px;
+    border-left: 3px solid #ff4d4d;
+    margin: 10px 0;
+    font-size: 0.95rem;
+    border-radius: 0 4px 4px 0;
+    flex-grow: 1; /* ocupa o espaço disponível */
+    overflow-y: auto;
+}
+
+/* RODAPÉ FIXADO AO FINAL DA DESCRIÇÃO */
+.rodape {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: right;
+    padding-top: 8px;
+    margin-top: 10px;
+    border-top: 1px dashed #ccc;
 }
