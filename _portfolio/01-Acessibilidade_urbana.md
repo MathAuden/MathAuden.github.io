@@ -10,8 +10,8 @@ en:
 gallery:
   direction: portrait
   images:
-  - '\Acessibilidade\Home.png'
-  - '\Acessibilidade\About_us.png'
-  - '\Acessibilidade\Places.png'
+  - 'Acessibilidade/Home.png'
+  - 'Acessibilidade/About_us.png'
+  - 'Acessibilidade/Places.png'
 tags: [development,projeto academico, HTML, CSS]
 ---

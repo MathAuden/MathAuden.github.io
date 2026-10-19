@@ -9,6 +9,6 @@ en:
 gallery:
   direction: portrait
   images:
-  - '\Booker\Booker.png'
+  - '/Booker/Booker.png'
 tags: [design, projeto academico]
 ---
