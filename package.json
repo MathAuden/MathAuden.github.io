@@ -1,0 +1,15 @@
+{
+  "name": "mathauden",
+  "version": "0.1",
+  "description": "my portfolio / website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathauden/mathauden.git"
+  },
+  "author": "Matheus Prado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathauden/mathauden/issues"
+  },
+  "homepage": "https://github.com/mathauden/mathauden#readme"
+}

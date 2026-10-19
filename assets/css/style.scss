@@ -1,0 +1,30 @@
+---
+---
+/*
+** VARIABLES
+*/
+@import "variables.css";
+
+/*
+** GENERAL
+*/
+@import "minireset.css";
+@import "general.css";
+@import "markdown.css";
+
+/*
+** PAGES
+*/
+@import "home.css";
+@import "portfolio.css";
+@import "curriculum.css";
+@import "contact.css";
+@import "ennecoisa.css";
+
+/*
+** COMPONENTS
+*/
+@import "gallery.css";
+@import "mode-switcher.css";
+@import "cookies.css";
+@import "tabbar.css";

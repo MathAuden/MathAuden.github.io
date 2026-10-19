@@ -1,0 +1,9 @@
+{%- assign lang = page.lang | default: site.lang | default: 'en' -%}
+<div class="gsm-cookies">
+  <p class="gsm-cookies__text">🍪 {{ site.cookies[lang].text }}</p>
+  <p class="gsm-cookies__button">
+    <button class="gsm-cookies__ok">{{ site.cookies[lang].agree }}</button>
+  </p>
+</div>
+
+<script src="{{ "/assets/js/cookies.js" | prepend: site.baseurl }}"></script>

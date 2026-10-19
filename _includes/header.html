@@ -1,0 +1,14 @@
+{%- assign lang = page.lang | default: site.lang | default: 'en' -%}
+<div class="gsm-header">
+  <ul class="gsm-nav-list">
+    {%- for item in site.menu[lang] -%}
+    <li class="gsm-nav-list__item{% if page.section == item[0] %} _active{% endif %}">
+      <a href="{{ item[1].link | prepend: site.url }}">
+        <span>
+          {{ item[1].title }}
+        </span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
